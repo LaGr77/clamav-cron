@@ -5,8 +5,8 @@
 # licence MIT
 
 CLAM_LOGFILE="/var/log/clamav/clamav-$(date +'%w').log"
-CLAM_EMAIL="gru1950@gmail.com"
-CLAM_EMAIL_CC="lada.grulich@gmail.com"
+CLAM_EMAIL="email-1"
+CLAM_EMAIL_CC="email-2"
 CLAM_EMAIL_FROM="ClamAV@$HOSTNAME"
 
 if [ "$(date +'%w')" == 6 ]; then
