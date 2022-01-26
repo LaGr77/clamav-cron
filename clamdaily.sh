@@ -1,7 +1,7 @@
 #!/bin/bash
 # written by Ladislav Grulich (LaGr77)
-# version 1.0.0
-# since 2022-01-19
+# version 1.0.1
+# since 2022-01-26
 # licence MIT
 
 CLAM_LOGFILE="/var/log/clamav/clamav-$(date +'%w').log"
