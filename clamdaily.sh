@@ -10,11 +10,11 @@ CLAM_EMAIL_CC="email-2@gmail.com"
 CLAM_EMAIL_FROM="ClamAV@$HOSTNAME"
 
 if [ "$(date +'%w')" == 1 ]; then
-	nice -n10 clamscan --recursive --infected / --exclude-dir=/proc/ --exclude-dir=/sys/ &>"${CLAM_LOGFILE}";
+	nice -n0 clamscan --recursive --infected / --exclude-dir=/proc/ --exclude-dir=/sys/ &>"${CLAM_LOGFILE}";
 	#--log="${CLAM_LOGFILE}"
 	CLAM_SUBJ="FULL"
 else
-	nice -n15 clamscan --recursive --infected $HOME &>"${CLAM_LOGFILE}";
+	nice -n0 clamscan --recursive --infected $HOME &>"${CLAM_LOGFILE}";
 	#--log="${CLAM_LOGFILE}"
 	CLAM_SUBJ="HOME"
 fi
