@@ -14,7 +14,7 @@ if [ "$(date +'%w')" == 1 ]; then
 	#--log="${CLAM_LOGFILE}"
 	CLAM_SUBJ="FULL"
 else
-	nice -n0 clamscan --recursive --infected $HOME &>"${CLAM_LOGFILE}";
+	nice -n0 clamscan --recursive --infected /home &>"${CLAM_LOGFILE}";
 	#--log="${CLAM_LOGFILE}"
 	CLAM_SUBJ="HOME"
 fi
