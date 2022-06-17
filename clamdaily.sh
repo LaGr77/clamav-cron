@@ -1,10 +1,10 @@
 #!/bin/bash
 # written by Ladislav Grulich (LaGr77)
-# version 1.1.0
+# version 1.1.1
 # since 2022-06-17
 # licence MIT
 
-CLAM_LOGFILE="/var/log/clamav/clamav-$(date +'%w').log"
+#CLAM_LOGFILE="/var/log/clamav/clamav-$(date +'%w').log"
 CLAM_EMAIL="email-1@gmail.com"
 CLAM_EMAIL_CC="email-2@gmail.com"
 CLAM_EMAIL_FROM="ClamAV@$HOSTNAME"
